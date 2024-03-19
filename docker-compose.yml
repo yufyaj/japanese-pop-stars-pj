@@ -9,7 +9,7 @@ services:
       - '3000:3000' # ホストの3000ポートをコンテナの3000ポートにバインド
     volumes:
       - ./client/src:/app # ソースコードをコンテナにマウント
-    command: yarn dev
+    command: npm run dev
 
   # Laravelの設定
   api:
